@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'echo fsdgsdgsd'
+                sh 'echo ku'
                 sh 'docker build .'
             }
         }
