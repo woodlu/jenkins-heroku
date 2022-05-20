@@ -25,4 +25,10 @@ public class AppResource {
     public String hello(@DefaultValue("hello") @QueryParam("name") String name) {
         return String.format("Hello, %s!", name);
     }
+
+    @GET
+    @Path("/hello2")
+    public String hello2(@DefaultValue("hello") @QueryParam("name") String name) {
+        return String.format("Hello, %s!", name);
+    }
 }
