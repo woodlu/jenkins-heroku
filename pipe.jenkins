@@ -1,0 +1,17 @@
+#!groovy
+// Check ub1 properties
+properties([disableConcurrentBuilds()])
+
+pipeline {
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '3'))
+        timestamps()
+    }
+    stages {
+        stage("First step") {
+            steps {
+                sh 'docker-compose up'
+            }
+        }
+    }
+}

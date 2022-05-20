@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  jenkins-docker:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: jenkins-docker
+    container_name: jenkins-docker
+    restart: always
+    ports:
+      - "8081:8081"
