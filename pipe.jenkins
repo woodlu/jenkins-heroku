@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'echo ku'
+                sh 'echo kuku'
                 sh 'docker-compose up'
             }
         }
