@@ -12,6 +12,7 @@ pipeline {
         stage("First step") {
             steps {
                 sh 'echo fsdgsdgsd'
+                sh 'docker build .'
             }
         }
     }
